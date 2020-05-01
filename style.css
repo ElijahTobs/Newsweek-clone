@@ -34,19 +34,65 @@ header a {
   color: #fff;
 }
 
-header .i-col3 {
+/* header .i-col3 {
   display: flex;
 }
 
 header .i-col3 > div {
   align-items: flex-end;
   justify-content: end;
-}
+} */
 
 header .h-sub a,
 header .h-sub i{
   color: #f72210;
 }
 
+nav .nav-item a,
+nav span.nav-item {
+  color: #000;
+  font: 1.9rem 'Roboto Condensed', sans-serif;
+}
 
+nav .nav-item a {
+  border-right: 1px solid #888;
+  padding-right: 1.5rem;
+  padding-left: .5rem;
+  font-weight: 700;
+}
 
+.nav-item a:hover {
+  color: #f72210;
+  text-decoration: none;
+}
+
+.ul-right {
+  padding-right: 7rem;
+}
+
+.h-si a,
+.h-sub {
+  font: 1.8rem 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+}
+
+.h-si a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.h-sub a:hover {
+  text-decoration: none;
+}
+
+.h-bottom {
+  top: 0;
+  right: 0;
+  /* left: auto; */
+  width: 8rem;
+  background-color: #f72210;
+  border-left: 12px solid white;
+  border-top: 13px solid #f72210;
+}
+/* nav .nav-item {
+} */
