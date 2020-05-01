@@ -34,24 +34,39 @@ header a {
   color: #fff;
 }
 
-/* header .i-col3 {
-  display: flex;
+header a:hover {
+  color: #fff;
+  text-decoration: none;
 }
-
-header .i-col3 > div {
-  align-items: flex-end;
-  justify-content: end;
-} */
 
 header .h-sub a,
 header .h-sub i{
   color: #f72210;
 }
 
+.h-sub  {
+  padding: .3rem 1rem .3rem 1.2rem;
+}
+
+.navbar {
+  padding: 1.5rem 1rem 1.5rem 0;
+}
+
 nav .nav-item a,
 nav span.nav-item {
   color: #000;
   font: 1.9rem 'Roboto Condensed', sans-serif;
+}
+
+.nav-top {
+  border-bottom-width: .2rem;
+  border-bottom-style: solid;
+  border-bottom-color: #f4f5f6;
+  z-index: 1;
+}
+
+.nav-item {
+  padding: 0;
 }
 
 nav .nav-item a {
