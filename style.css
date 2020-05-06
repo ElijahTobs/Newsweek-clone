@@ -1,4 +1,4 @@
-* {
+p, * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,6 +9,10 @@ html {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+hr {
+  margin: 0;
+  border-color: #ddd;
+}
 .container,
 .container-fluid {
   /* max-width: 131.5rem; */
@@ -126,6 +130,11 @@ nav span.nav-item {
   border-top: 12px solid #f72210;
 }
 
+.block-title {
+  font: bold 1.7rem "Roboto Condensed",sans-serif;  
+  color: rgba(3,3,3,0.4);
+  margin: 0 0 1.1rem;
+}
 
 .category a {
   display: block;
@@ -140,15 +149,135 @@ nav span.nav-item {
   z-index: 1;
 }
 
+.sponsored .category a{
+  color: #3581f4;
+}
+
 .category a {
   color: #f72210;
 }
 
-.left-image img {
+.category a:hover {
+  text-decoration: none;
+}
+
+.middle-image img,
+.left-side img,
+.middle img,
+.sponsored img {
   width: 100%;
   height: 100%;
 }
 
-.left-side {
+.left-side h3,
+.middle h3,
+.sponsored h3 {
+  font-size: 2.4rem;
+  color: #000;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.left-side .info:hover,
+.middle .info:hover,
+.sponsored .info:hover {
+  text-decoration-color: #f72210;
+  /* color: #f72210; */
+}
+
+.left-side p,
+.middle p,
+.sponsored p {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.heroes-image div > a,
+.culture-image div > a {
+  background-color: #c2d4d7;
+  color: #272727;
+  padding-left: 6px;
+  padding-right: 6px;
+  position: absolute;
+  font-size: 1.3rem;
+  bottom: 0;
+  left: 0;
+}
+
+.heroes-image div > a:hover,
+.culture-image div > a:hover {
+  text-decoration: none;
+  background-color: #272727;
+  color: #c2d4d7;
+}
+
+.heroes-title,
+.culture-title {
+  
+  color: #272727;
+}
+
+.heroes-title p,
+.culture-title p {
+  font-size: 2rem;
+  font-family: 'Lora', serif;
+}
+.heroes-title:hover,
+.culture-title:hover {
+  text-decoration: none;
+  color: #272727;
+}
+
+.heroes-summary,
+.culture-summary {
+  color: rgba(39,39,39,0.5);
+}
+
+.more-stories {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+/* .story-image {
+  padding-right: 0;
+} */
+
+.story-info,
+.op-details {
+  padding-left: 0;
+}
+
+.more-stories img {
+  width: 9.5rem;
+  height: 9.5rem;
+}
+
+.story-title {
+  font: bold 1.7rem "Roboto Condensed",sans-serif;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.story-title:hover {
+  color: #000;
+  text-decoration-color: #f72210;
+}
+
+.opinion {
   margin: 1rem 0;
+}
+
+.op-title {
+  color: #000;
+  font: bold 1.7rem "Roboto Condensed", sans-serif;
+}
+
+.op-title:hover {
+  color: #f72210;
+  text-decoration: none;
+}
+
+.op-author {
+  color: #555;
+  font: bold 1.4rem "Roboto Condensed", sans-serif; 
 }
