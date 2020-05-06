@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Newsweek - News, Analysis, Politics, Business, technology</title>
+  <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/f2b651e885.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="container">
-    <div class="row">
+  <header class="container-fluid sticky-top">
+    <nav class="first-nav navbar navbar-expand">
       <div class="col">
         <div class="row">
           <div class="col-12 h-weather ml-4 mb-4">
@@ -32,31 +32,57 @@
             </g></svg>
         </a>
       </div>
-      <div class="col col3 d-flex align-items-end justify-content-end">
-        <div class="i-col3 text-end row mr-4">
+      <div class="col col3 d-flex justify-content-end align-items-end">
+        <div class="i-col3 text-end d-flex align-items-end mr-1">
           <div class="col-auto align-self-center h-si"><a href="#">SIGN IN</a></div>
           <div class="col-auto bg-white h-sub"><a href="#">SUBSCRIBE &ThinSpace;</a> <i class="fas fa-chevron-right"></i></div>
         </div>
       </div>
-    </div>
-  </header>
-  <nav class="container nav-top position-relative navbar navbar-expand-lg navbar-light  bg-white" role="navigation">
-    <ul class="navbar-nav w-100 ul-right justify-content-between">
-      <li class="nav-item nav-link"><a href="">U.S.</a></li>
-      <li class="nav-item nav-link"><a href="">World</a></li>
-      <li class="nav-item nav-link"><a href="">Business</a></li>
-      <li class="nav-item nav-link"><a href="">Tech & Science</a></li>
-      <li class="nav-item nav-link"><a href="">Culture</a></li>
-      <li class="nav-item nav-link"><a href="">Newsgeek</a></li>
-      <li class="nav-item nav-link"><a href="">Sports</a></li>
-      <li class="nav-item nav-link"><a href="">Health</a></li>
-      <li class="nav-item nav-link"><a href="">The Debate</a></li>
-      <li class="nav-item nav-link"><a href="">Vantage</a></li>
-      <li class="nav-item nav-link"><a href="">Weather</a></li>
-      <span class="nav-item nav-link">Search <i class="fas fa-search"></i></span>
-    </ul>
+    </nav>
+    <nav class="second-nav navbar-expand-lg position-relative align-items-center justify-content-center bg-white" role="navigation">
+      <ul class="navbar-nav w-100 ul-right justify-content-between">
+        <li class="nav-item nav-link"><a href="">U.S.</a></li>
+        <li class="nav-item nav-link"><a href="">World</a></li>
+        <li class="nav-item nav-link"><a href="">Business</a></li>
+        <li class="nav-item nav-link"><a href="">Tech & Science</a></li>
+        <li class="nav-item nav-link"><a href="">Culture</a></li>
+        <li class="nav-item nav-link"><a href="">Newsgeek</a></li>
+        <li class="nav-item nav-link"><a href="">Sports</a></li>
+        <li class="nav-item nav-link"><a href="">Health</a></li>
+        <li class="nav-item nav-link"><a href="">The Debate</a></li>
+        <li class="nav-item nav-link"><a href="">Vantage</a></li>
+        <li class="nav-item nav-link"><a href="">Weather</a></li>
+        <span class="nav-item nav-link">Search <i class="fas fa-search"></i></span>
+      </ul>
     <span class="h-bottom position-absolute"></span>
   </nav>
+  </header>
+  
+  <main class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-lg-3 left-side bg-warning">
+        <div class="block-title">FEATURED STORIES</div>
+        <div class="left-side">
+          <div class="left-image">
+            <img src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577">
+            <div class="category position-relative">
+              <a href="#">U.S</a>
+            </div>
+          </div>
+          <h3>Without 100,000 Virus Contact Tracers, "We're Going to Be in Big Trouble"</h3>
+          <div class="left-summary">
+            The point of contact tracing is to extinguish small pockets of new cases before they explode into big outbreaks like the ones that steamrolled New York City and New Orleans last month.
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 bg-secondary">
+        Elijah2
+      </div>
+      <div class="col-lg-3 bg-primary">
+        Elijah3
+      </div>
+    </div>
+  </main>
   
 
 
