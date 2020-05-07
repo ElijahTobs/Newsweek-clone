@@ -15,11 +15,9 @@ hr {
 }
 .container,
 .container-fluid {
-  /* max-width: 131.5rem; */
+  max-width: 133.9999rem;
   width: 100%;
   padding: 0 1rem 0 1rem;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 header {
@@ -36,6 +34,10 @@ header {
   font: 1.5rem 'Roboto Condensed', sans-serif;
   font-weight: 700;
 }
+
+/* .navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+} */
 
 .h-date {
   font: 1.5rem 'Roboto Condensed', sans-serif;
@@ -78,22 +80,21 @@ nav span.nav-item {
   font: 1.9rem 'Roboto Condensed', sans-serif;
 }
 
-.nav-top {
+.second-nav {
   border-bottom-width: .2rem;
   border-bottom-style: solid;
   border-bottom-color: #f4f5f6;
   z-index: 1;
 }
 
-.nav-item {
-  padding: 0;
+.second-nav .nav-link {
+  font-weight: 700;
+  border-right: 1px solid #888 !important;
+  padding: 0 1.5rem !important;
 }
 
-.second-nav .nav-item a {
-  border-right: 1px solid #888;
-  padding-right: 1.5rem;
-  padding-left: 1.2rem;
-  font-weight: 700;
+li.nav-item {
+  margin: auto;
 }
 
 .nav-item a:hover {
@@ -268,10 +269,6 @@ nav span.nav-item {
   margin-bottom: 3rem;
 }
 
-/* .story-image {
-  padding-right: 0;
-} */
-
 .story-info,
 .op-details,
 .news-info {
@@ -368,10 +365,10 @@ nav span.nav-item {
   margin-bottom: 15px;
 }
 
-
-@media screen and (min-width: 768px) {
-    .magazine .mag-header {
+.magazine .mag-header {
     border-bottom: 1px solid #d9d9d9;
     padding-bottom: 8px;
   }
-}
+/* @media screen and (min-width: 768px) {
+    
+} */
