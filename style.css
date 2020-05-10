@@ -529,6 +529,23 @@ li.nav-item.last {
     height: 100%;
   }
 
+  main.container-fluid {
+    /* border-bottom: 1px solid #d9d9d9; */
+    padding-bottom: 2rem;
+  }
+
+  .d-footer svg {
+      display: block;
+      width: 236px;
+      height: 36px;
+      /* margin-right: 15px;
+      margin-bottom: 12px; */
+      fill: #f72210;
+  }
+
+  .left-top-footer p {
+    font-size: 1.2rem;
+  }
   /* .newsletter {
     border: 1px solid #d9d9d9;
   } */
