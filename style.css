@@ -546,6 +546,13 @@ li.nav-item.last {
   .left-top-footer p {
     font-size: 1.2rem;
   }
+
+  .right-top-footer a {
+    color: #777;
+    margin-left: 1rem;
+    font-size: 2.2rem;
+  }
+  
   /* .newsletter {
     border: 1px solid #d9d9d9;
   } */
