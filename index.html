@@ -1,1284 +1,1866 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/f2b651e885.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- HEADER -->
-  <header class="container sticky-top">
-    <nav class="first-nav navbar navbar-expand">
-      <div class="col">
-        <div class="row">
-          <div class="col-12 h-weather ml-4 mb-4">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f2b651e885.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="d-none d-lg-block header-one container sticky-top">
+      <nav class="first-nav navbar navbar-expand">
+        <div class="col">
+          <div class="row">
+            <div class="col-12 h-weather ml-4 mb-4">
+              <a href="#">
+                <i class="fas fa-cloud-sun-rain"></i>
+                <span
+                  >28&deg; Lagos, NG &ThickSpace;<i
+                    class="fas fa-chevron-right"
+                  ></i
+                ></span>
+              </a>
+            </div>
+            <div class="col h-date ml-4">
+              <p>Fri, May 1, 2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <a class="brand" href="#">
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 395.6 60"
+              style="enable-background: new 0 0 395.6 60;"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="col col3 d-flex justify-content-end align-items-end">
+          <div class="i-col3 text-end d-flex align-items-end mr-4">
+            <div class="col-auto align-self-center h-si">
+              <a href="#">SIGN IN</a>
+            </div>
+            <div class="col-auto bg-white h-sub">
+              <a href="#">SUBSCRIBE &ThinSpace;</a>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav
+        class="second-nav navbar-expand position-relative align-items-center justify-content-around bg-white"
+        role="navigation"
+      >
+        <ul class="navbar-nav w-100 ul-right justify-content-center">
+          <li class="nav-item"><a href="" class="nav-link">U.S.</a></li>
+          <li class="nav-item"><a href="" class="nav-link">World</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Business</a></li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Tech & Science</a>
+          </li>
+          <li class="nav-item"><a href="" class="nav-link">Culture</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Newsgeek</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Sports</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Health</a></li>
+          <li class="nav-item"><a href="" class="nav-link">The Debate</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Vantage</a></li>
+          <li class="nav-item d-flex last">
+            <a href="" class="nav-link">Weather</a>
+            <span class="nav-item">Search <i class="fas fa-search"></i></span>
+          </li>
+        </ul>
+        <span class="h-bottom position-absolute"></span>
+      </nav>
+    </header>
+    <header class="header-two d-block d-lg-none container sticky-top">
+      <div class="row px-3 py-4">
+        <div class="col-6 d-flex align-items-end">
+          <a class="brand pr-5" href="#">
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 395.6 60"
+              style="enable-background: new 0 0 395.6 60;"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <div class="h-weather">
             <a href="#">
               <i class="fas fa-cloud-sun-rain"></i>
-            <span>28&deg; Lagos, NG &ThickSpace;<i class="fas fa-chevron-right"></i></span>
+              <span
+                >28&deg; Lagos, NG &ThickSpace;<i
+                  class="fas fa-chevron-right"
+                ></i
+              ></span>
             </a>
           </div>
-          <div class="col h-date ml-4">
-            <p>Fri, May 1, 2020</p>
+        </div>
+        <div class="col-6">
+          <div class="i-col3 text-end justify-content-end d-flex align-items-end mr-4">
+            <div class="col-auto align-self-center h-si">
+              <a href="#">SIGN IN</a>
+            </div>
+            <div class="col-auto bg-white h-sub">
+              <a href="#">SUBSCRIBE &ThinSpace;</a>
+              <i class="fas fa-chevron-right"></i>
+            </div>
+            <i class="pl-3 fas fa-bars"></i>
           </div>
         </div>
       </div>
-      <div class="col">
-        <a class="brand" href="#">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g>
-            <path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
-            </g></svg>
-        </a>
-      </div>
-      <div class="col col3 d-flex justify-content-end align-items-end">
-        <div class="i-col3 text-end d-flex align-items-end mr-4">
-          <div class="col-auto align-self-center h-si"><a href="#">SIGN IN</a></div>
-          <div class="col-auto bg-white h-sub"><a href="#">SUBSCRIBE &ThinSpace;</a> <i class="fas fa-chevron-right"></i></div>
-        </div>
-      </div>
-    </nav>
-    <nav class="second-nav navbar-expand position-relative align-items-center justify-content-around bg-white" role="navigation">
-      <ul class="navbar-nav w-100 ul-right justify-content-center">
-        <li class="nav-item"><a href="" class="nav-link">U.S.</a></li>
-        <li class="nav-item"><a href="" class="nav-link">World</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Business</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Tech & Science</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Culture</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Newsgeek</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Sports</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Health</a></li>
-        <li class="nav-item"><a href="" class="nav-link">The Debate</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Vantage</a></li>
-        <li class="nav-item d-flex last">
-          <a href="" class="nav-link">Weather</a>
-          <span class="nav-item">Search <i class="fas fa-search"></i></span>
-        </li>
-      </ul>
-      <span class="h-bottom position-absolute"></span>
-    </nav>
-  </header>
-  
-  <!-- MAIN CONTENT -->
-  <main class="container-fluid bg-white">
-    <div class="row justify-content-center">
-      <!-- FEATURED STORIES -->
-      <div class="col-md-5 col-lg-3 pt-4">
-        <div class="block-title">FEATURED STORIES</div>
-        <div class="left-side">
-          <div class="left-image">
-            <a href="#">
-              <img src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577">
-            </a>
-            <div class="category position-relative">
-              <a href="#">HEALTH</a>
-            </div>
-          </div>
-          <a href="#" class="info">
-            <h3>Without 100,000 Virus Contact Tracers, "We're Going to Be in Big Trouble"</h3>
-          </a>
-          <p class="left-summary">
-            The point of contact tracing is to extinguish small pockets of new cases before they explode into big outbreaks like the ones that steamrolled New York City and New Orleans last month.
-          </p>
-        </div>
-        <div class="left-side">
-          <div class="left-image">
-            <a href="#">
-              <img src="https://d.newsweek.com/en/full/1587608/neil-ferguson.jpg?w=397&h=265&q=90&f=faa1539aee66deb4ebdcc6943e78b985">
-            </a>
-            <div class="category position-relative">
-              <a href="#">NEWS</a>
-            </div>
-          </div>
-          <a href="#" class="info">
-            <h3>U.K Scientist Quits After Breaking Social Distancing Rules With Lover</h3>
-          </a>
-          <p class="left-summary">
-            Professor Neil Ferguson, who influenced the federal government's response to coronavirus, admits he made "an error of judgment."
-          </p>
-        </div>
-        <div class="left-side">
-          <div class="left-image">
-            <a href="#">
-              <img src="https://d.newsweek.com/en/full/1587603/bernie-sanders.jpg?w=397&h=265&q=90&f=95c924f3f35a3cd7a3a432fae54e3d7e">
-            </a>
-            <div class="category position-relative">
-              <a href="#">U.S</a>
-            </div>
-          </div>
-          <a href="#" class="info">
-            <h3>Sanders Gets Chance to Pick Up NY Delegates After Judge Reinstates Primary</h3>
-          </a>
-          <p class="left-summary">
-            Yang said the decision to remove names from the ballot denied voters "the right to choose our next candidate for the office of President of the United States."
-          </p>
-        </div>
-        <div class="left-side">
-          <div class="left-image">
-            <a href="#">
-              <img src="https://d.newsweek.com/en/full/1587560/biden-trump.jpg?w=397&h=265&q=90&f=ee3bdd598181269ffcff6e556fba6d24">
-            </a>
-            <div class="category position-relative">
-              <a href="#">U.S</a>
-            </div>
-          </div>
-          <a href="#" class="info">
-            <h3>Joe Biden to Launch &dollar;55 Million Latino Vote Campaign</h3>
-          </a>
-          <p class="left-summary">
-            Former Vice President Joe Biden's campaign is launching a multimillion-dollar Latino vote campaign after polling showed he needed to invest heavily to attract Latino men to help him secure the presidency, Newsweek has learned.
-          </p>
-        </div>
-        <div class="left-side">
-          <div class="left-image">
-            <a href="#">
-              <img src="https://d.newsweek.com/en/full/1587478/beachgoers-galveston-beach-may-2-2020-texas.jpg?w=397&h=265&q=90&f=43c008b994982a0bbf8efe933008e1cb">
-            </a>
-            <div class="category position-relative">
-              <a href="#">NEWS</a>
-            </div>
-          </div>
-          <a href="#" class="info">
-            <h3>Texas Sees Highest Single Day Jump in COVID-19 Cases Since Outbreak Began</h3>
-          </a>
-          <p class="left-summary">
-            The state also recorded its highest daily death toll of 50 fatalities just a day before the state's reopening on May 1, Texas health authorities report.
-          </p>
-        </div>
-        <div class="sponsored">
-          <div class="sponsored-image">
-            <a href="#">
-              <img src="https://d.newsweek.com/en/full/1587478/beachgoers-galveston-beach-may-2-2020-texas.jpg?w=397&h=265&q=90&f=43c008b994982a0bbf8efe933008e1cb">
-            </a>
-            <div class="category position-relative">
-              <a href="#">SPONSORED INSIGHT</a>
-            </div>
-          </div>
-          <div class="sp-detail">
-            <a href="#" class="info">
-              <h3>Turkey: Strength in Adversity</h3>
-            </a>
-            <p class="left-summary">
-              The state also recorded its highest daily death toll of 50 fatalities just a day before the state's reopening on May 1, Texas health authorities report.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- TOP STORY -->
-      <div class="col-md-7 col-lg-5 pt-4">
-        <div class="block-title">TOP STORY</div>
-        <div class="middle">
-          <div class="middle-image">
-            <a href="#">
-              <img src="https://d.newsweek.com/en/full/1587605/president-donald-trump.jpg?w=591&h=364&f=1216edc44c655610fae4fe5b70a8cd00">
-            </a>
-            <div class="category position-relative">
-              <a href="#">NEWS</a>
-            </div>
-          </div>
-          <a href="#" class="info">
-            <h3>Trump Acknowledges Reopening Economy Will Affect Some People 'Badly'</h3>
-          </a>
-          <p class="middle-summary">
-            President Donald Trump advocated a quick reopening for the U.S. economy on Tuesday, while conceding that the decision could cost "some" additional lives lost to COVID-19.
-          </p>
-          <!-- HEROES -->
-          <div class="block-title pt-4">HEROES OF THE PANDEMIC</div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="section">
-                <div class="heroes-image">
-                  <a href="#">
-                    <img src="https://d.newsweek.com/en/full/1582032/riya-ortiz-damayan-migrant-workers-association.jpg?w=397&h=397&f=53de83c7597de80f95461e7b0774eada" alt="Pandemic Heroes">
-                  </a>
-                  <div class="position-relative">
-                    <a href="#">Pandemic Heroes</a>
-                  </div>
-                </div>
-                <div class="heroes-info">
-                  <a href="#" class="heroes-title">
-                    <p>Organizer Helps Rebuild New York's Filipino Community Hit by COVID-19</p>
-                  </a>
-                  <p class="heroes-summary">
-                    "When this whole thing started what kept me up at night is the possibility of mass casualties in our community," Riya Ortiz told Newsweek.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="section">
-                <div class="heroes-image">
-                  <a href="#">
-                    <img src="https://d.newsweek.com/en/full/1581628/sandra-sacco-face-masks-coronavirus.jpg?w=397&h=397&f=7892f6ddd82131592228622320b031ef">
-                  </a>
-                  <div class="position-relative">
-                    <a href="#">Pandemic Heroes</a>
-                  </div>
-                </div>
-                <div class="heroes-info">
-                  <a href="#" class="heroes-title">
-                    <p>Tennessee Group Makes Coronavirus Face Masks for Local, International Use</p>
-                  </a>
-                  <p class="heroes-summary">
-                    "We're not selling anything," Sacco said Tuesday. "Every single bit of this is donation-only or nothing."
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="section">
-                <div class="heroes-image">
-                  <a href="#">
-                    <img src="https://d.newsweek.com/en/full/1578426/zoe-monterola-founder-six-feet-supplies.jpg?w=397&h=397&f=f7a624e81aa902878bb39d5fe83e971f" alt="Pandemic Heroes">
-                  </a>
-                  <div class="position-relative">
-                    <a href="#">Pandemic Heroes</a>
-                  </div>
-                </div>
-                <div class="heroes-info">
-                  <a href="#" class="heroes-title">
-                    <p>Teenagers Shop for the Vulnerable During Coronavirus Emergency</p>
-                  </a>
-                  <p class="heroes-summary">
-                    "I almost cried," said a user of Six Feet Supplies, a charity started by teenagers who shop for those susceptible to COVID-19.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- CULTURE & TRAVEL -->
-          <div class="block-title pt-4">CULTURE & TRAVEL</div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="section">
-                <div class="culture-image">
-                  <a href="#">
-                    <img src="https://d.newsweek.com/en/full/1586378/naomi-tomky.png?w=397&h=397&f=c5f3297afdbaeef9aab32c55079cf40d" alt="Pandemic Heroes">
-                  </a>
-                  <div class="position-relative">
-                    <a href="#">Baking</a>
-                  </div>
-                </div>
-                <div class="culture-info">
-                  <a href="#" class="culture-title">
-                    <p>Beyond Baking Bread, What's Everyone Cooking in Lockdown?</p>
-                  </a>
-                  <p class="culture-summary">
-                    The foodie authorities share with Newsweek they've seen an uptick in slow cooking, getting creative with food scraps and even virtual dinner parties.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="section">
-                <div class="heroes-image">
-                  <a href="#">
-                    <img src="https://d.newsweek.com/en/full/1576391/cul-uncharted-coffee-banner.jpg?w=397&h=397&f=4d2409095121a97e6958cb0acb5c209d" alt="Travel">
-                  </a>
-                  <div class="position-relative">
-                    <a href="#">Travel</a>
-                  </div>
-                </div>
-                <div class="heroes-info">
-                  <a href="#" class="heroes-title">
-                    <p>How The World Takes Its Coffee</p>
-                  </a>
-                  <p class="heroes-summary">
-                    Whether you prefer a coffee spiced with pepper, a half-caf venti no-foam soy latte from your favorite barista; or a coffee with cheese, here's a sampling of caffeinated rituals from across the globe.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="section">
-                <div class="heroes-image">
-                  <a href="#">
-                    <img src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.jpg?w=397&h=397&f=58f2928e21223138ca7d7116ae9ffd39" alt="Star Wars">
-                  </a>
-                  <div class="position-relative">
-                    <a href="#">Star Wars</a>
-                  </div>
-                </div>
-                <div class="heroes-info">
-                  <a href="#" class="heroes-title">
-                    <p>Relive the 'Star Wars' Saga at These Filming Locations</p>
-                  </a>
-                  <p class="heroes-summary">
-                    Fans may be lamenting the end of the 'Star Wars' series, but they can still visit these film locations and space-themed destinations.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- MORE STORIES -->
-          <div class="block-title pt-4">MORE STORIES</div>
-          <hr>
-          <div class="row more-stories">
-            <div class="col-auto story-image">
-              <a href="#">
-                <img src="https://d.newsweek.com/en/full/1587416/italy-public-transport-social-distancing.jpg?w=95&h=95&l=54&t=59&f=2f9e9b1c321422f51d194e890f432d83" alt="train">
-              </a>
-            </div>
-            <div class="col story-info">
-              <a href="#" class="story-title">
-                <p>
-                  Italy Slowly Reopens After Lockdown: Pictures Show Social Distancing
-                </p>
-              </a>
-              <p class="story-msg">
-                Italians have adapted public transport and restaurants as the country enters phase two of its coronavirus response.
-              </p>
-            </div>
-          </div>
-          <hr>
-          <div class="row more-stories">
-            <div class="col-auto story-image">
-              <a href="#">
-                <img src="https://d.newsweek.com/en/full/1587376/antibody.jpg?w=95&h=95&f=6516e151f5abb5e6ae9ae81ebe5abc01" alt="train">
-              </a>
-            </div>
-            <div class="col story-info">
-              <a href="#" class="story-title">
-                <p>
-                  Coronavirus Antibodies Carried for at Least Two Weeks After Recovery: Study
-                </p>
-              </a>
-              <p class="story-msg">
-                Scientists studied the blood of over a dozen COVID-19 patients.
-              </p>
-            </div>
-          </div>
-          <hr>
-          <div class="row more-stories">
-            <div class="col-auto story-image">
-              <a href="#">
-                <img src="https://d.newsweek.com/en/full/1587312/mike-pompeo-china-coronavirus-allies-wuhan-lab.jpg?w=95&h=95&f=1a2870dbe890e6510d496f662ae43c2b" alt="train">
-              </a>
-            </div>
-            <div class="col story-info">
-              <a href="#" class="story-title">
-                <p>
-                  Chinese State Media Accuses Pompeo of 'Despicable' Coronavirus Lies
-                </p>
-              </a>
-              <p class="story-msg">
-                Pompeo and President Donald Trump say they are confident that COVID-19 came from a Wuhan research lab, but are yet to produce evidence supporting the assertion.
-              </p>
-            </div>
-          </div>
-          <hr>
-          <div class="row more-stories">
-            <div class="col-auto story-image">
-              <a href="#">
-                <img src="https://d.newsweek.com/en/full/1587311/dr-anthony-fauci-coronavirus-briefing.jpg?w=95&h=95&f=712f5df2fa04f6dc86a7f99c3a3cd451" alt="train">
-              </a>
-            </div>
-            <div class="col story-info">
-              <a href="#" class="story-title">
-                <p>
-                  Dr. Fauci Says COVID-19 Has 'Phenomenal' Ability to Spread 'Like Wildfire'
-                </p>
-              </a>
-              <p class="story-msg">
-                The leading infectious disease expert on the White House coronavirus task force also said he was "very sensitive" to the economic impact of COVID-19.
-              </p>
-            </div>
-          </div>
-          <hr>
-          <div class="row more-stories">
-            <div class="col-auto story-image">
-              <a href="#">
-                <img src="https://d.newsweek.com/en/full/1587465/georgia-coronavirus.jpg?w=95&h=95&f=4644a0b329a13adf29daa7f78bd7a1f6" alt="train">
-              </a>
-            </div>
-            <div class="col story-info">
-              <a href="#" class="story-title">
-                <p>
-                  Majority of Americans Still Oppose Reopening Businesses Amid Coronavirus
-                </p>
-              </a>
-              <p class="story-msg">
-                Nearly three-quarters of Americans believe dine-in restaurants should remain closed.
-              </p>
-            </div>
-          </div>
-          <hr>
-          <div class="row more-stories">
-            <div class="col-auto story-image">
-              <a href="#">
-                <img src="https://d.newsweek.com/en/full/1587569/wall-street.jpg?w=95&h=95&f=93497f2a1e9142c451b9aad8433ae704" alt="train">
-              </a>
-            </div>
-            <div class="col story-info">
-              <a href="#" class="story-title">
-                <p>
-                  Trump Adviser Predicts 'Worst Unemployment Rate' Since Great Depression
-                </p>
-              </a>
-              <p class="story-msg">
-                "My guess right now is that it's going to be north of 16 percent, maybe as high as 19 or 20 percent," Kevin Hassett said.
-              </p>
-            </div>
-          </div>
-          <hr>
-          <div class="row more-stories">
-            <div class="col-auto story-image">
-              <a href="#">
-                <img src="https://d.newsweek.com/en/full/1587205/mcconnell-blue-state-bailouts-coronavirus.jpg?w=95&h=95&f=04cf26512b06802ba0dac7a87667d4fd" alt="McConnell">
-              </a>
-            </div>
-            <div class="col story-info">
-              <a href="#" class="story-title">
-                <p>
-                  McConnell Wants to Stop Blue State Bailouts, but Red States Need Help Too
-                </p>
-              </a>
-              <p class="story-msg">
-                "The virus is everywhere. Every state has needed to take action to slow its spread, and that has had major effects on each of their economies," said the Center on Budget and Policy Priorities' Michael Leachman.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- OPINION -->
-      <div class="col-lg-3 pt-4">
-        <div class="block-title pl-4">OPINION</div>
-        <div class="row opinion">
-          <div class="col-auto">
-            <a href="#" class="opinion-img">
-              <img src="https://d.newsweek.com/en/full/1587504/triple-byline.png?w=63&h=63&f=247d3aaa5d5b765b45818ea33ee779f2" alt="triple-byline">
-            </a>
-          </div>
-          <div class="col op-details">
-            <a href="#" class="op-title">
-              Vote-by-Mail Is Essential to Protect Voters—and Democracy Itself
-            </a>
-            <p class="op-author">
-              BY JENA GRISWOLD, KIM WYMAN AND JOSHUA SILVER
-            </p>
-          </div>
+    </header>
 
-        </div>
-        <hr>
-        <div class="row opinion">
-          <div class="col-auto">
-            <a href="#" class="opinion-img">
-              <img src="https://d.newsweek.com/en/full/1506965/charlie-kirk.png?w=63&h=63&f=dadcbab6cd325ee70d1bfe4df5a01410" alt="Charlie Kirk">
-            </a>
-          </div>
-          <div class="col op-details">
-            <a href="#" class="op-title">
-              In the Face of Media Attacks, Pence Is the Model Stoic
-            </a>
-            <p class="op-author">
-              BY CHARLIE KIRK
-            </p>
-          </div>
-        </div>
-        <hr>
-        <div class="row opinion">
-          <div class="col-auto">
-            <a href="#" class="opinion-img">
-              <img src="https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&h=63&f=297351a03eaa549128026042394c9580" alt="ROBERT REICH">
-            </a>
-          </div>
-          <div class="col op-details">
-            <a href="#" class="op-title">
-              Trump's Plan to Reopen the Economy Is Contemptible—and Deadly
-            </a>
-            <p class="op-author">
-              BY ROBERT REICH
-            </p>
-          </div>
-        </div>
-        <hr>
-        <div class="row opinion">
-          <div class="col-auto">
-            <a href="#" class="opinion-img">
-              <img src="https://d.newsweek.com/en/full/1587454/william-darity-jr-kirsten-mullen.png?w=63&h=63&f=68e3c1b723b0c45f811fac435367ea94" alt="William A. Darity Jr. and A. Kirsten Mullen">
-            </a>
-          </div>
-          <div class="col op-details">
-            <a href="#" class="op-title">
-              Coronavirus Is Making the Case for Black Reparations Clearer Than Ever
-            </a>
-            <p class="op-author">
-              BY WILLIAM A. DARITY JR. AND A. KIRSTEN MULLEN
-            </p>
-          </div>
-        </div>
-        <!-- LATEST NEWS -->
-        <div class="col latest-news pt-5">
-          <div class="block-title ">LATEST NEWS</div>
-          <div class="row first">
-            <div class="col-auto news-image">
+    <!-- MAIN CONTENT -->
+    <main class="container-fluid px-3 bg-white">
+      <div class="row justify-content-center">
+        <!-- FEATURED STORIES -->
+        <div class="col-md-5 order-sm-2 order-md-1 col-lg-3 pt-4">
+          <div class="block-title">FEATURED STORIES</div>
+          <div class="left-side">
+            <div class="left-image">
               <a href="#">
-                <img src="https://d.newsweek.com/en/full/1587362/baby-archie-birth-photo.jpg?w=95&h=95&f=e2859642696bb5092b504758d6765ac4" alt="Baby Archie birth photo">
+                <img
+                  src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577"
+                />
               </a>
+              <div class="category position-relative">
+                <a href="#">HEALTH</a>
+              </div>
             </div>
-            <div class="col news-info">
-              <a href="#" class="news-title">
-                <p>
-                  Baby Archie's First Year in Pictures as Harry and Meghan's Son Turns 1
-                </p>
-              </a>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col-auto news-image">
-              <a href="#">
-                <img src="https://d.newsweek.com/en/full/1587615/coronavirus-vaccine.jpg?w=95&h=95&f=af905eb03cd89c13b5b6ef20fb9cc921" alt="coronavirus,vaccine">
-              </a>
-            </div>
-            <div class="col news-info">
-              <a href="#" class="news-title">
-                <p>
-                  Republicans More Likely Than Democrats to Refuse Coronavirus Vaccine: Poll
-                </p>
-              </a>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col-auto news-image">
-              <a href="#">
-                <img src="https://d.newsweek.com/en/full/1587521/coronavirus-us.jpg?w=95&h=95&f=cc1adfb10815e3bcf16343767eac125a" alt="Coronavirus in U.S.">
-              </a>
-            </div>
-            <div class="col news-info">
-              <a href="#" class="news-title">
-                <p>
-                  More Than Half of U.S. Homeowners Worried About Making Mortgage Payments
-                </p>
-              </a>
-            </div>
-          </div>
-          <hr>
-          <div class="row">
-            <div class="col-auto news-image">
-              <a href="#">
-                <img src="https://d.newsweek.com/en/full/1587613/obama-biden.jpg?w=95&h=95&f=cb971a6eaaefff1366b4d899576840f9" alt="Obama and Biden">
-              </a>
-            </div>
-            <div class="col news-info">
-              <a href="#" class="news-title">
-                <p>
-                  Obama Letter Condemns GOP-Led Investigation into Biden and Ukraine
-                </p>
-              </a>
-            </div>
-          </div>
-          <hr>
-          <div class="row last">
-            <div class="col-auto news-image">
-              <a href="#">
-                <img src="https://d.newsweek.com/en/full/1587612/house-minority-leader-nancy-pelosi.jpg?w=95&h=95&f=e99fddefc01094321ef1c9cde25be623" alt="House Minority Leader Nancy Pelosi">
-              </a>
-            </div>
-            <div class="col news-info">
-              <a href="#" class="news-title">
-                <p>
-                  Pelosi Believes Biden's Denial of Tara Reade's Sexual Assault Allegation
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="sponsored">
-          <div class="sponsored-image">
-            <a href="#">
-              <img src="https://d.newsweek.com/en/full/1579322/wheaton-college-massachusetts.jpg?w=500&h=333&f=88f8ca5b2a4cb233d52b78eebba24e7a">
-            </a>
-            <div class="category position-relative">
-              <a href="#">SPONSORED INSIGHT</a>
-            </div>
-          </div>
-          <div class="sp-detail">
             <a href="#" class="info">
-              <h3>What Sets the Leading Liberal Arts Schools Apart?</h3>
+              <h3>
+                Without 100,000 Virus Contact Tracers, "We're Going to Be in Big
+                Trouble"
+              </h3>
             </a>
             <p class="left-summary">
-              There are a number of great Liberal Arts Schools in the USA today, but what qualities do the best of them have?
+              The point of contact tracing is to extinguish small pockets of new
+              cases before they explode into big outbreaks like the ones that
+              steamrolled New York City and New Orleans last month.
             </p>
           </div>
-        </div>
-        <div class="sign-up">
-          <div class="line1 d-flex align-items-center">
-            <span class="icon-n"></span>
-            Sign up for our Newsletter
-          </div>
-          <a href="#">SIGN UP <i class="fas fa-chevron-right"></i></a>
-          <a href="#" class="pref">Update your preferences</a>
-        </div>
-        <div class="sponsored">
-          <div class="sponsored-image">
-            <a href="#">
-              <img src="https://d.newsweek.com/en/full/1579970/minnesota-state-university-mankato.jpg?w=500&h=333&l=0&t=0&f=be3deb29cdda5635e8d4655b0d0df489">
-            </a>
-            <div class="category position-relative">
-              <a href="#">SPONSORED INSIGHT</a>
+          <div class="left-side">
+            <div class="left-image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1587608/neil-ferguson.jpg?w=397&h=265&q=90&f=faa1539aee66deb4ebdcc6943e78b985"
+                />
+              </a>
+              <div class="category position-relative">
+                <a href="#">NEWS</a>
+              </div>
             </div>
-          </div>
-          <div class="sp-detail">
             <a href="#" class="info">
-              <h3>What Qualities Make a Leading University?</h3>
+              <h3>
+                U.K Scientist Quits After Breaking Social Distancing Rules With
+                Lover
+              </h3>
             </a>
             <p class="left-summary">
-              A Leading University has to have a track record of producing well qualified, gifted and employable candidates. Which schools earn the accolade?
+              Professor Neil Ferguson, who influenced the federal government's
+              response to coronavirus, admits he made "an error of judgment."
             </p>
           </div>
-        </div>
-        <div class="sponsored">
-          <div class="sponsored-image">
-            <a href="#">
-              <img src="https://d.newsweek.com/en/full/1573591/carleton-university-sprott-school-business.jpg?w=500&h=333&f=37789d7304cfa9370108298f0b23dac7">
-            </a>
-            <div class="category position-relative">
-              <a href="#">SPONSORED INSIGHT</a>
+          <div class="left-side">
+            <div class="left-image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1587603/bernie-sanders.jpg?w=397&h=265&q=90&f=95c924f3f35a3cd7a3a432fae54e3d7e"
+                />
+              </a>
+              <div class="category position-relative">
+                <a href="#">U.S</a>
+              </div>
             </div>
-          </div>
-          <div class="sp-detail">
             <a href="#" class="info">
-              <h3>How Can a Good Business Education Benefit You?</h3>
+              <h3>
+                Sanders Gets Chance to Pick Up NY Delegates After Judge
+                Reinstates Primary
+              </h3>
             </a>
             <p class="left-summary">
-              Enrolling at a good Business School might be the best investment you can make in your future, and while costs can be significant, the rewards are incalculable. Find out more.
+              Yang said the decision to remove names from the ballot denied
+              voters "the right to choose our next candidate for the office of
+              President of the United States."
             </p>
           </div>
+          <div class="left-side">
+            <div class="left-image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1587560/biden-trump.jpg?w=397&h=265&q=90&f=ee3bdd598181269ffcff6e556fba6d24"
+                />
+              </a>
+              <div class="category position-relative">
+                <a href="#">U.S</a>
+              </div>
+            </div>
+            <a href="#" class="info">
+              <h3>
+                Joe Biden to Launch &dollar;55 Million Latino Vote Campaign
+              </h3>
+            </a>
+            <p class="left-summary">
+              Former Vice President Joe Biden's campaign is launching a
+              multimillion-dollar Latino vote campaign after polling showed he
+              needed to invest heavily to attract Latino men to help him secure
+              the presidency, Newsweek has learned.
+            </p>
+          </div>
+          <div class="left-side">
+            <div class="left-image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1587478/beachgoers-galveston-beach-may-2-2020-texas.jpg?w=397&h=265&q=90&f=43c008b994982a0bbf8efe933008e1cb"
+                />
+              </a>
+              <div class="category position-relative">
+                <a href="#">NEWS</a>
+              </div>
+            </div>
+            <a href="#" class="info">
+              <h3>
+                Texas Sees Highest Single Day Jump in COVID-19 Cases Since
+                Outbreak Began
+              </h3>
+            </a>
+            <p class="left-summary">
+              The state also recorded its highest daily death toll of 50
+              fatalities just a day before the state's reopening on May 1, Texas
+              health authorities report.
+            </p>
+          </div>
+          <div class="sponsored">
+            <div class="sponsored-image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1587478/beachgoers-galveston-beach-may-2-2020-texas.jpg?w=397&h=265&q=90&f=43c008b994982a0bbf8efe933008e1cb"
+                />
+              </a>
+              <div class="category position-relative">
+                <a href="#">SPONSORED INSIGHT</a>
+              </div>
+            </div>
+            <div class="sp-detail">
+              <a href="#" class="info">
+                <h3>Turkey: Strength in Adversity</h3>
+              </a>
+              <p class="left-summary">
+                The state also recorded its highest daily death toll of 50
+                fatalities just a day before the state's reopening on May 1,
+                Texas health authorities report.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row justify-content-center px-5 pt-5">
-        <div class="col">
-          <div class="magazine">
-            <div class="mag-header px-5 d-flex justify-content-center align-items-center">
-              <span class="icon-n"></span>
-              IN THE MAGAZINE
-            </div>
-            <div class="row mag-section">
-              <div class="col-sm-12 col-md-3">
-                <div class="mag-container position-relative">
-                  <img src="https://d.newsweek.com/en/full/1585087/may-08-15-2020-cover.jpg?w=360&h=480&q=90&f=8daec16f29a5ed3617c83e11ff6a5019" alt="class of 2020">
-                  <a href="#" class="mag-tag-sep">MAY 15 ISSUE</a>
-                </div>
-                <a href="#" class="feature-sep">SEE ALL FEATURES <i class="fas fa-chevron-right"></i> </a>
-              </div>
-              <div class="col-sm-12 col-md-3 mt-md-5">
-                <div class="mag-container  mag-all">
-                  <img src="https://d.newsweek.com/en/full/1584979/classof2020.jpg?w=466&h=311&l=50&t=50&q=90&f=d744de45e6705e6c455aeaa148669459" alt="">
-                </div>
-                <div class="mag-info pt-3">
-                  <span class="tag p-2">FEATURES</span>
-                  <a href="#" class="mag-category pt-2">EDUCATION</a>
-                </div>
-                <div class="mag-text">
-                  <a href="#" class="">The Class of 2020 Is All Dressed Up With Nowhere to Go</a>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-3 mt-md-5">
-                <div class="mag-container  mag-all">
-                  <img src="https://d.newsweek.com/en/full/1584979/classof2020.jpg?w=466&h=311&l=50&t=50&q=90&f=d744de45e6705e6c455aeaa148669459" alt="">
-                </div>
-                <div class="mag-info pt-3">
-                  <span class="tag p-2">FEATURES</span>
-                  <a href="#" class="mag-category pt-2">EDUCATION</a>
-                </div>
-                <div class="mag-text">
-                  <a href="#" class="">The Class of 2020 Is All Dressed Up With Nowhere to Go</a>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-3 mt-md-5">
-                <div class="mag-container  mag-all">
-                  <img src="https://d.newsweek.com/en/full/1584979/classof2020.jpg?w=466&h=311&l=50&t=50&q=90&f=d744de45e6705e6c455aeaa148669459" alt="">
-                </div>
-                <div class="mag-info pt-3">
-                  <span class="tag p-2">FEATURES</span>
-                  <a href="#" class="mag-category pt-2">EDUCATION</a>
-                </div>
-                <div class="mag-text">
-                  <a href="#" class="">The Class of 2020 Is All Dressed Up With Nowhere to Go</a>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-3 mt-md-5">
-                <div class="mag-container  mag-all">
-                  <img src="https://d.newsweek.com/en/full/1584979/classof2020.jpg?w=466&h=311&l=50&t=50&q=90&f=d744de45e6705e6c455aeaa148669459" alt="">
-                </div>
-                <div class="mag-info pt-3">
-                  <span class="tag p-2">FEATURES</span>
-                  <a href="#" class="mag-category pt-2">EDUCATION</a>
-                </div>
-                <div class="mag-text">
-                  <a href="#" class="">The Class of 2020 Is All Dressed Up With Nowhere to Go</a>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-3 mt-md-5">
-                <div class="mag-container  mag-all">
-                  <img src="https://d.newsweek.com/en/full/1584979/classof2020.jpg?w=466&h=311&l=50&t=50&q=90&f=d744de45e6705e6c455aeaa148669459" alt="">
-                </div>
-                <div class="mag-info pt-3">
-                  <span class="tag p-2">FEATURES</span>
-                  <a href="#" class="mag-category pt-2">EDUCATION</a>
-                </div>
-                <div class="mag-text">
-                  <a href="#" class="">The Class of 2020 Is All Dressed Up With Nowhere to Go</a>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-3 mt-md-5">
-                <div class="mag-container  mag-all">
-                  <img src="https://d.newsweek.com/en/full/1584979/classof2020.jpg?w=466&h=311&l=50&t=50&q=90&f=d744de45e6705e6c455aeaa148669459" alt="">
-                </div>
-                <div class="mag-info pt-3">
-                  <span class="tag p-2">FEATURES</span>
-                  <a href="#" class="mag-category pt-2">EDUCATION</a>
-                </div>
-                <div class="mag-text">
-                  <a href="#" class="">The Class of 2020 Is All Dressed Up With Nowhere to Go</a>
-                </div>
-              </div>
-              <div class="col-sm-12 col-md-3 mt-md-5">
-                <div class="mag-container  mag-all">
-                  <img src="https://d.newsweek.com/en/full/1584979/classof2020.jpg?w=466&h=311&l=50&t=50&q=90&f=d744de45e6705e6c455aeaa148669459" alt="">
-                </div>
-                <div class="mag-info pt-3">
-                  <span class="tag p-2">FEATURES</span>
-                  <a href="#" class="mag-category pt-2">EDUCATION</a>
-                </div>
-                <div class="mag-text">
-                  <a href="#" class="">The Class of 2020 Is All Dressed Up With Nowhere to Go</a>
-                </div>
+        <!-- TOP STORY -->
+        <div class="col-md-7 order-sm-1 col-lg-5 pt-4">
+          <div class="block-title">TOP STORY</div>
+          <div class="middle">
+            <div class="middle-image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1587605/president-donald-trump.jpg?w=591&h=364&f=1216edc44c655610fae4fe5b70a8cd00"
+                />
+              </a>
+              <div class="category position-relative">
+                <a href="#">NEWS</a>
               </div>
             </div>
-          </div>
-          <div class="editor">
-            <div class="editor-header mt-5 d-flex justify-content-center align-items-center">
-              <span class="icon-n"></span>
-              EDITOR'S PICK
-            </div>
-            <div class="row editor-section">
-              <div class="col-md-3">
-                <div class="editor-section">
-                  <div class="editor-image">
-                    <a href="#">
-                      <img src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577">
-                    </a>
-                    <div class="category position-relative">
-                      <a href="#">HEALTH</a>
-                    </div>
-                  </div>
-                  <a href="#" class="info">
-                    <h3>Without 100,000 Virus Contact Tracers, "We're Going to Be in Big Trouble"</h3>
-                  </a>
-                  <p class="left-summary">
-                    The point of contact tracing is to extinguish small pockets of new cases before they explode into big outbreaks like the ones that steamrolled New York City and New Orleans last month.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="editor-section">
-                  <div class="editor-image">
-                    <a href="#">
-                      <img src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577">
-                    </a>
-                    <div class="category position-relative">
-                      <a href="#">HEALTH</a>
-                    </div>
-                  </div>
-                  <a href="#" class="info">
-                    <h3>Without 100,000 Virus Contact Tracers, "We're Going to Be in Big Trouble"</h3>
-                  </a>
-                  <p class="left-summary">
-                    The point of contact tracing is to extinguish small pockets of new cases before they explode into big outbreaks like the ones that steamrolled New York City and New Orleans last month.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="editor-section">
-                  <div class="editor-image">
-                    <a href="#">
-                      <img src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577">
-                    </a>
-                    <div class="category position-relative">
-                      <a href="#">HEALTH</a>
-                    </div>
-                  </div>
-                  <a href="#" class="info">
-                    <h3>Without 100,000 Virus Contact Tracers, "We're Going to Be in Big Trouble"</h3>
-                  </a>
-                  <p class="left-summary">
-                    The point of contact tracing is to extinguish small pockets of new cases before they explode into big outbreaks like the ones that steamrolled New York City and New Orleans last month.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="editor-section">
-                  <div class="editor-image">
-                    <a href="#">
-                      <img src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577">
-                    </a>
-                    <div class="category position-relative">
-                      <a href="#">HEALTH</a>
-                    </div>
-                  </div>
-                  <a href="#" class="info">
-                    <h3>Without 100,000 Virus Contact Tracers, "We're Going to Be in Big Trouble"</h3>
-                  </a>
-                  <p class="left-summary">
-                    The point of contact tracing is to extinguish small pockets of new cases before they explode into big outbreaks like the ones that steamrolled New York City and New Orleans last month.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="editor-section">
-                  <div class="editor-image">
-                    <a href="#">
-                      <img src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577">
-                    </a>
-                    <div class="category position-relative">
-                      <a href="#">HEALTH</a>
-                    </div>
-                  </div>
-                  <a href="#" class="info">
-                    <h3>Without 100,000 Virus Contact Tracers, "We're Going to Be in Big Trouble"</h3>
-                  </a>
-                  <p class="left-summary">
-                    The point of contact tracing is to extinguish small pockets of new cases before they explode into big outbreaks like the ones that steamrolled New York City and New Orleans last month.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="editor-section">
-                  <div class="editor-image">
-                    <a href="#">
-                      <img src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577">
-                    </a>
-                    <div class="category position-relative">
-                      <a href="#">HEALTH</a>
-                    </div>
-                  </div>
-                  <a href="#" class="info">
-                    <h3>Without 100,000 Virus Contact Tracers, "We're Going to Be in Big Trouble"</h3>
-                  </a>
-                  <p class="left-summary">
-                    The point of contact tracing is to extinguish small pockets of new cases before they explode into big outbreaks like the ones that steamrolled New York City and New Orleans last month.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="editor-section">
-                  <div class="editor-image">
-                    <a href="#">
-                      <img src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577">
-                    </a>
-                    <div class="category position-relative">
-                      <a href="#">HEALTH</a>
-                    </div>
-                  </div>
-                  <a href="#" class="info">
-                    <h3>Without 100,000 Virus Contact Tracers, "We're Going to Be in Big Trouble"</h3>
-                  </a>
-                  <p class="left-summary">
-                    The point of contact tracing is to extinguish small pockets of new cases before they explode into big outbreaks like the ones that steamrolled New York City and New Orleans last month.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="editor-section">
-                  <div class="editor-image">
-                    <a href="#">
-                      <img src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577">
-                    </a>
-                    <div class="category position-relative">
-                      <a href="#">HEALTH</a>
-                    </div>
-                  </div>
-                  <a href="#" class="info">
-                    <h3>Without 100,000 Virus Contact Tracers, "We're Going to Be in Big Trouble"</h3>
-                  </a>
-                  <p class="left-summary">
-                    The point of contact tracing is to extinguish small pockets of new cases before they explode into big outbreaks like the ones that steamrolled New York City and New Orleans last month.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="other-section">
-            <hr>
-            <p class="header pt-4">U.S.</p>
-            <div class="row content pt-4">
-              <div class="col-md-4">
-                <img src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4" alt="Melinda Gates">
-                <p class="pt-3">
-                  <a href="#" class="about">Melinda Gates Gives Trump Administration's Coronavirus Response 'D-'</a>
-                </p>
-              </div>
-              <div class="col-md-4">
-                <img src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4" alt="Melinda Gates">
-                <p class="pt-3">
-                  <a href="#" class="about">Melinda Gates Gives Trump Administration's Coronavirus Response 'D-'</a>
-                </p>
-              </div>
-              <div class="col-md-4">
-                <div class="row third pb-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-                <hr>
-                <div class="row third py-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-                <hr>
-                <div class="row py-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <p class="header pt-4">World</p>
-            <div class="row content pt-4">
-              <div class="col-md-4">
-                <img src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4" alt="Melinda Gates">
-                <p class="pt-3">
-                  <a href="#" class="about">Melinda Gates Gives Trump Administration's Coronavirus Response 'D-'</a>
-                </p>
-              </div>
-              <div class="col-md-4">
-                <img src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4" alt="Melinda Gates">
-                <p class="pt-3">
-                  <a href="#" class="about">Melinda Gates Gives Trump Administration's Coronavirus Response 'D-'</a>
-                </p>
-              </div>
-              <div class="col-md-4">
-                <div class="row third pb-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-                <hr>
-                <div class="row third py-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-                <hr>
-                <div class="row py-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <p class="header pt-4">Business</p>
-            <div class="row content pt-4">
-              <div class="col-md-4">
-                <img src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4" alt="Melinda Gates">
-                <p class="pt-3">
-                  <a href="#" class="about">Melinda Gates Gives Trump Administration's Coronavirus Response 'D-'</a>
-                </p>
-              </div>
-              <div class="col-md-4">
-                <img src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4" alt="Melinda Gates">
-                <p class="pt-3">
-                  <a href="#" class="about">Melinda Gates Gives Trump Administration's Coronavirus Response 'D-'</a>
-                </p>
-              </div>
-              <div class="col-md-4">
-                <div class="row third pb-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-                <hr>
-                <div class="row third py-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-                <hr>
-                <div class="row py-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <p class="header pt-4">Tech & Science</p>
-            <div class="row content pt-4">
-              <div class="col-md-4">
-                <img src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4" alt="Melinda Gates">
-                <p class="pt-3">
-                  <a href="#" class="about">Melinda Gates Gives Trump Administration's Coronavirus Response 'D-'</a>
-                </p>
-              </div>
-              <div class="col-md-4">
-                <img src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4" alt="Melinda Gates">
-                <p class="pt-3">
-                  <a href="#" class="about">Melinda Gates Gives Trump Administration's Coronavirus Response 'D-'</a>
-                </p>
-              </div>
-              <div class="col-md-4">
-                <div class="row third pb-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-                <hr>
-                <div class="row third py-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-                <hr>
-                <div class="row py-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <p class="header pt-4">Culture</p>
-            <div class="row content pt-4">
-              <div class="col-md-4">
-                <img src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4" alt="Melinda Gates">
-                <p class="pt-3">
-                  <a href="#" class="about">Melinda Gates Gives Trump Administration's Coronavirus Response 'D-'</a>
-                </p>
-              </div>
-              <div class="col-md-4">
-                <img src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4" alt="Melinda Gates">
-                <p class="pt-3">
-                  <a href="#" class="about">Melinda Gates Gives Trump Administration's Coronavirus Response 'D-'</a>
-                </p>
-              </div>
-              <div class="col-md-4">
-                <div class="row third pb-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-                <hr>
-                <div class="row third py-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-                <hr>
-                <div class="row py-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr>
-            <p class="header pt-4">Sports</p>
-            <div class="row content pt-4">
-              <div class="col-md-4">
-                <img src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4" alt="Melinda Gates">
-                <p class="pt-3">
-                  <a href="#" class="about">Melinda Gates Gives Trump Administration's Coronavirus Response 'D-'</a>
-                </p>
-              </div>
-              <div class="col-md-4">
-                <img src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4" alt="Melinda Gates">
-                <p class="pt-3">
-                  <a href="#" class="about">Melinda Gates Gives Trump Administration's Coronavirus Response 'D-'</a>
-                </p>
-              </div>
-              <div class="col-md-4">
-                <div class="row third pb-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-                <hr>
-                <div class="row third py-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-                <hr>
-                <div class="row py-3">
-                  <div class="col-3">
-                    <a href="#">
-                      <img class="ninety5" src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb" alt="">
-                    </a>
-                  </div>
-                  <div class="col-9">
-                    <p class="img-info">
-                      <a href="#">Bureau of Prisons Says Virus Testing Limited as Inmates Test Positive in KY</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="pb-5">
-          </div>
-          <div class="footer-top pb-5">
+            <a href="#" class="info">
+              <h3>
+                Trump Acknowledges Reopening Economy Will Affect Some People
+                'Badly'
+              </h3>
+            </a>
+            <p class="middle-summary">
+              President Donald Trump advocated a quick reopening for the U.S.
+              economy on Tuesday, while conceding that the decision could cost
+              "some" additional lives lost to COVID-19.
+            </p>
+            <!-- HEROES -->
+            <div class="block-title pt-4">HEROES OF THE PANDEMIC</div>
             <div class="row">
-              <div class="col-md-8">
-                <h4 class="">SUBSCRIBE</h4>
-                <div class="row ft-cont justify-content-between ml-0">
-                  <div class="col-4 pl-0 pr-5 position-relative">
-                    <img src="https://d.newsweek.com/en/full/1582633/may-01-2020-cover.jpg?w=170&q=95&f=1a0d984a3141e5762557f214ca2a1540" alt="">
-                    <img src="https://d.newsweek.com/en/full/1585087/may-08-15-2020-cover.jpg?w=170&q=95&f=c4d10af6474d34e586607b280b6589f0" alt="" class="position-absolute">
+              <div class="col-md-4">
+                <div class="section">
+                  <div class="heroes-image">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1582032/riya-ortiz-damayan-migrant-workers-association.jpg?w=397&h=397&f=53de83c7597de80f95461e7b0774eada"
+                        alt="Pandemic Heroes"
+                      />
+                    </a>
+                    <div class="position-relative">
+                      <a href="#">Pandemic Heroes</a>
+                    </div>
                   </div>
-                  <div class="col-8 pl-5 align-self-center">
-                    <h3>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
-                    </h3>
-                    <p>All Access + Weekly Delivery.
-                      Choose A Membership That's Perfect for You!
+                  <div class="heroes-info">
+                    <a href="#" class="heroes-title">
+                      <p>
+                        Organizer Helps Rebuild New York's Filipino Community
+                        Hit by COVID-19
+                      </p>
+                    </a>
+                    <p class="heroes-summary">
+                      "When this whole thing started what kept me up at night is
+                      the possibility of mass casualties in our community," Riya
+                      Ortiz told Newsweek.
                     </p>
-                    <button>SUBSCRIBE <i class="fas fa-chevron-right"></i></button>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 pl-5">
-                <h4 class="">NEWSLETTER</h4>
-                <div class="row newsletter">
-                  <div class="col-6 pr-0">
-                    <div class="image-ft-top">
-                      
+              <div class="col-md-4">
+                <div class="section">
+                  <div class="heroes-image">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1581628/sandra-sacco-face-masks-coronavirus.jpg?w=397&h=397&f=7892f6ddd82131592228622320b031ef"
+                      />
+                    </a>
+                    <div class="position-relative">
+                      <a href="#">Pandemic Heroes</a>
                     </div>
                   </div>
-                  <div class="col-6 p-0">
-                    <div class="news-info">
-                      <h3>The Starting 5
-                      </h3>
-                      <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5
+                  <div class="heroes-info">
+                    <a href="#" class="heroes-title">
+                      <p>
+                        Tennessee Group Makes Coronavirus Face Masks for Local,
+                        International Use
                       </p>
-                      <button>SIGN UP <i class="fas fa-chevron-right"></i></button>
+                    </a>
+                    <p class="heroes-summary">
+                      "We're not selling anything," Sacco said Tuesday. "Every
+                      single bit of this is donation-only or nothing."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="section">
+                  <div class="heroes-image">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1578426/zoe-monterola-founder-six-feet-supplies.jpg?w=397&h=397&f=f7a624e81aa902878bb39d5fe83e971f"
+                        alt="Pandemic Heroes"
+                      />
+                    </a>
+                    <div class="position-relative">
+                      <a href="#">Pandemic Heroes</a>
+                    </div>
+                  </div>
+                  <div class="heroes-info">
+                    <a href="#" class="heroes-title">
+                      <p>
+                        Teenagers Shop for the Vulnerable During Coronavirus
+                        Emergency
+                      </p>
+                    </a>
+                    <p class="heroes-summary">
+                      "I almost cried," said a user of Six Feet Supplies, a
+                      charity started by teenagers who shop for those
+                      susceptible to COVID-19.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CULTURE & TRAVEL -->
+            <div class="block-title pt-4">CULTURE & TRAVEL</div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="section">
+                  <div class="culture-image">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1586378/naomi-tomky.png?w=397&h=397&f=c5f3297afdbaeef9aab32c55079cf40d"
+                        alt="Pandemic Heroes"
+                      />
+                    </a>
+                    <div class="position-relative">
+                      <a href="#">Baking</a>
+                    </div>
+                  </div>
+                  <div class="culture-info">
+                    <a href="#" class="culture-title">
+                      <p>
+                        Beyond Baking Bread, What's Everyone Cooking in
+                        Lockdown?
+                      </p>
+                    </a>
+                    <p class="culture-summary">
+                      The foodie authorities share with Newsweek they've seen an
+                      uptick in slow cooking, getting creative with food scraps
+                      and even virtual dinner parties.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="section">
+                  <div class="heroes-image">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1576391/cul-uncharted-coffee-banner.jpg?w=397&h=397&f=4d2409095121a97e6958cb0acb5c209d"
+                        alt="Travel"
+                      />
+                    </a>
+                    <div class="position-relative">
+                      <a href="#">Travel</a>
+                    </div>
+                  </div>
+                  <div class="heroes-info">
+                    <a href="#" class="heroes-title">
+                      <p>How The World Takes Its Coffee</p>
+                    </a>
+                    <p class="heroes-summary">
+                      Whether you prefer a coffee spiced with pepper, a half-caf
+                      venti no-foam soy latte from your favorite barista; or a
+                      coffee with cheese, here's a sampling of caffeinated
+                      rituals from across the globe.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="section">
+                  <div class="heroes-image">
+                    <a href="#">
+                      <img
+                        src="https://d.newsweek.com/en/full/1560097/tozeur-tunisia.jpg?w=397&h=397&f=58f2928e21223138ca7d7116ae9ffd39"
+                        alt="Star Wars"
+                      />
+                    </a>
+                    <div class="position-relative">
+                      <a href="#">Star Wars</a>
+                    </div>
+                  </div>
+                  <div class="heroes-info">
+                    <a href="#" class="heroes-title">
+                      <p>
+                        Relive the 'Star Wars' Saga at These Filming Locations
+                      </p>
+                    </a>
+                    <p class="heroes-summary">
+                      Fans may be lamenting the end of the 'Star Wars' series,
+                      but they can still visit these film locations and
+                      space-themed destinations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- MORE STORIES -->
+            <div class="block-title pt-4">MORE STORIES</div>
+            <hr />
+            <div class="row more-stories">
+              <div class="col-auto story-image">
+                <a href="#">
+                  <img
+                    src="https://d.newsweek.com/en/full/1587416/italy-public-transport-social-distancing.jpg?w=95&h=95&l=54&t=59&f=2f9e9b1c321422f51d194e890f432d83"
+                    alt="train"
+                  />
+                </a>
+              </div>
+              <div class="col story-info">
+                <a href="#" class="story-title">
+                  <p>
+                    Italy Slowly Reopens After Lockdown: Pictures Show Social
+                    Distancing
+                  </p>
+                </a>
+                <p class="story-msg">
+                  Italians have adapted public transport and restaurants as the
+                  country enters phase two of its coronavirus response.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="row more-stories">
+              <div class="col-auto story-image">
+                <a href="#">
+                  <img
+                    src="https://d.newsweek.com/en/full/1587376/antibody.jpg?w=95&h=95&f=6516e151f5abb5e6ae9ae81ebe5abc01"
+                    alt="train"
+                  />
+                </a>
+              </div>
+              <div class="col story-info">
+                <a href="#" class="story-title">
+                  <p>
+                    Coronavirus Antibodies Carried for at Least Two Weeks After
+                    Recovery: Study
+                  </p>
+                </a>
+                <p class="story-msg">
+                  Scientists studied the blood of over a dozen COVID-19
+                  patients.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="row more-stories">
+              <div class="col-auto story-image">
+                <a href="#">
+                  <img
+                    src="https://d.newsweek.com/en/full/1587312/mike-pompeo-china-coronavirus-allies-wuhan-lab.jpg?w=95&h=95&f=1a2870dbe890e6510d496f662ae43c2b"
+                    alt="train"
+                  />
+                </a>
+              </div>
+              <div class="col story-info">
+                <a href="#" class="story-title">
+                  <p>
+                    Chinese State Media Accuses Pompeo of 'Despicable'
+                    Coronavirus Lies
+                  </p>
+                </a>
+                <p class="story-msg">
+                  Pompeo and President Donald Trump say they are confident that
+                  COVID-19 came from a Wuhan research lab, but are yet to
+                  produce evidence supporting the assertion.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="row more-stories">
+              <div class="col-auto story-image">
+                <a href="#">
+                  <img
+                    src="https://d.newsweek.com/en/full/1587311/dr-anthony-fauci-coronavirus-briefing.jpg?w=95&h=95&f=712f5df2fa04f6dc86a7f99c3a3cd451"
+                    alt="train"
+                  />
+                </a>
+              </div>
+              <div class="col story-info">
+                <a href="#" class="story-title">
+                  <p>
+                    Dr. Fauci Says COVID-19 Has 'Phenomenal' Ability to Spread
+                    'Like Wildfire'
+                  </p>
+                </a>
+                <p class="story-msg">
+                  The leading infectious disease expert on the White House
+                  coronavirus task force also said he was "very sensitive" to
+                  the economic impact of COVID-19.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="row more-stories">
+              <div class="col-auto story-image">
+                <a href="#">
+                  <img
+                    src="https://d.newsweek.com/en/full/1587465/georgia-coronavirus.jpg?w=95&h=95&f=4644a0b329a13adf29daa7f78bd7a1f6"
+                    alt="train"
+                  />
+                </a>
+              </div>
+              <div class="col story-info">
+                <a href="#" class="story-title">
+                  <p>
+                    Majority of Americans Still Oppose Reopening Businesses Amid
+                    Coronavirus
+                  </p>
+                </a>
+                <p class="story-msg">
+                  Nearly three-quarters of Americans believe dine-in restaurants
+                  should remain closed.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="row more-stories">
+              <div class="col-auto story-image">
+                <a href="#">
+                  <img
+                    src="https://d.newsweek.com/en/full/1587569/wall-street.jpg?w=95&h=95&f=93497f2a1e9142c451b9aad8433ae704"
+                    alt="train"
+                  />
+                </a>
+              </div>
+              <div class="col story-info">
+                <a href="#" class="story-title">
+                  <p>
+                    Trump Adviser Predicts 'Worst Unemployment Rate' Since Great
+                    Depression
+                  </p>
+                </a>
+                <p class="story-msg">
+                  "My guess right now is that it's going to be north of 16
+                  percent, maybe as high as 19 or 20 percent," Kevin Hassett
+                  said.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="row more-stories">
+              <div class="col-auto story-image">
+                <a href="#">
+                  <img
+                    src="https://d.newsweek.com/en/full/1587205/mcconnell-blue-state-bailouts-coronavirus.jpg?w=95&h=95&f=04cf26512b06802ba0dac7a87667d4fd"
+                    alt="McConnell"
+                  />
+                </a>
+              </div>
+              <div class="col story-info">
+                <a href="#" class="story-title">
+                  <p>
+                    McConnell Wants to Stop Blue State Bailouts, but Red States
+                    Need Help Too
+                  </p>
+                </a>
+                <p class="story-msg">
+                  "The virus is everywhere. Every state has needed to take
+                  action to slow its spread, and that has had major effects on
+                  each of their economies," said the Center on Budget and Policy
+                  Priorities' Michael Leachman.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- OPINION -->
+        <div class="col-lg-3 order-sm-3 pt-4">
+          <div class="block-title pl-4">OPINION</div>
+          <div class="row opinion">
+            <div class="col-auto">
+              <a href="#" class="opinion-img">
+                <img
+                  src="https://d.newsweek.com/en/full/1587504/triple-byline.png?w=63&h=63&f=247d3aaa5d5b765b45818ea33ee779f2"
+                  alt="triple-byline"
+                />
+              </a>
+            </div>
+            <div class="col op-details">
+              <a href="#" class="op-title">
+                Vote-by-Mail Is Essential to Protect Voters—and Democracy Itself
+              </a>
+              <p class="op-author">
+                BY JENA GRISWOLD, KIM WYMAN AND JOSHUA SILVER
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="row opinion">
+            <div class="col-auto">
+              <a href="#" class="opinion-img">
+                <img
+                  src="https://d.newsweek.com/en/full/1506965/charlie-kirk.png?w=63&h=63&f=dadcbab6cd325ee70d1bfe4df5a01410"
+                  alt="Charlie Kirk"
+                />
+              </a>
+            </div>
+            <div class="col op-details">
+              <a href="#" class="op-title">
+                In the Face of Media Attacks, Pence Is the Model Stoic
+              </a>
+              <p class="op-author">
+                BY CHARLIE KIRK
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="row opinion">
+            <div class="col-auto">
+              <a href="#" class="opinion-img">
+                <img
+                  src="https://d.newsweek.com/en/full/97976/robert-reich.png?w=63&h=63&f=297351a03eaa549128026042394c9580"
+                  alt="ROBERT REICH"
+                />
+              </a>
+            </div>
+            <div class="col op-details">
+              <a href="#" class="op-title">
+                Trump's Plan to Reopen the Economy Is Contemptible—and Deadly
+              </a>
+              <p class="op-author">
+                BY ROBERT REICH
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="row opinion">
+            <div class="col-auto">
+              <a href="#" class="opinion-img">
+                <img
+                  src="https://d.newsweek.com/en/full/1587454/william-darity-jr-kirsten-mullen.png?w=63&h=63&f=68e3c1b723b0c45f811fac435367ea94"
+                  alt="William A. Darity Jr. and A. Kirsten Mullen"
+                />
+              </a>
+            </div>
+            <div class="col op-details">
+              <a href="#" class="op-title">
+                Coronavirus Is Making the Case for Black Reparations Clearer
+                Than Ever
+              </a>
+              <p class="op-author">
+                BY WILLIAM A. DARITY JR. AND A. KIRSTEN MULLEN
+              </p>
+            </div>
+          </div>
+          <!-- LATEST NEWS -->
+          <div class="col latest-news pt-5">
+            <div class="block-title">LATEST NEWS</div>
+            <div class="row first">
+              <div class="col-auto news-image">
+                <a href="#">
+                  <img
+                    src="https://d.newsweek.com/en/full/1587362/baby-archie-birth-photo.jpg?w=95&h=95&f=e2859642696bb5092b504758d6765ac4"
+                    alt="Baby Archie birth photo"
+                  />
+                </a>
+              </div>
+              <div class="col news-info">
+                <a href="#" class="news-title">
+                  <p>
+                    Baby Archie's First Year in Pictures as Harry and Meghan's
+                    Son Turns 1
+                  </p>
+                </a>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-auto news-image">
+                <a href="#">
+                  <img
+                    src="https://d.newsweek.com/en/full/1587615/coronavirus-vaccine.jpg?w=95&h=95&f=af905eb03cd89c13b5b6ef20fb9cc921"
+                    alt="coronavirus,vaccine"
+                  />
+                </a>
+              </div>
+              <div class="col news-info">
+                <a href="#" class="news-title">
+                  <p>
+                    Republicans More Likely Than Democrats to Refuse Coronavirus
+                    Vaccine: Poll
+                  </p>
+                </a>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-auto news-image">
+                <a href="#">
+                  <img
+                    src="https://d.newsweek.com/en/full/1587521/coronavirus-us.jpg?w=95&h=95&f=cc1adfb10815e3bcf16343767eac125a"
+                    alt="Coronavirus in U.S."
+                  />
+                </a>
+              </div>
+              <div class="col news-info">
+                <a href="#" class="news-title">
+                  <p>
+                    More Than Half of U.S. Homeowners Worried About Making
+                    Mortgage Payments
+                  </p>
+                </a>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-auto news-image">
+                <a href="#">
+                  <img
+                    src="https://d.newsweek.com/en/full/1587613/obama-biden.jpg?w=95&h=95&f=cb971a6eaaefff1366b4d899576840f9"
+                    alt="Obama and Biden"
+                  />
+                </a>
+              </div>
+              <div class="col news-info">
+                <a href="#" class="news-title">
+                  <p>
+                    Obama Letter Condemns GOP-Led Investigation into Biden and
+                    Ukraine
+                  </p>
+                </a>
+              </div>
+            </div>
+            <hr />
+            <div class="row last">
+              <div class="col-auto news-image">
+                <a href="#">
+                  <img
+                    src="https://d.newsweek.com/en/full/1587612/house-minority-leader-nancy-pelosi.jpg?w=95&h=95&f=e99fddefc01094321ef1c9cde25be623"
+                    alt="House Minority Leader Nancy Pelosi"
+                  />
+                </a>
+              </div>
+              <div class="col news-info">
+                <a href="#" class="news-title">
+                  <p>
+                    Pelosi Believes Biden's Denial of Tara Reade's Sexual
+                    Assault Allegation
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sponsored offset-md-3 offset-lg-0 col-md-6 col-lg-12">
+            <div class="sponsored-image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1579322/wheaton-college-massachusetts.jpg?w=500&h=333&f=88f8ca5b2a4cb233d52b78eebba24e7a"
+                />
+              </a>
+              <div class="category position-relative">
+                <a href="#">SPONSORED INSIGHT</a>
+              </div>
+            </div>
+            <div class="sp-detail">
+              <a href="#" class="info">
+                <h3>What Sets the Leading Liberal Arts Schools Apart?</h3>
+              </a>
+              <p class="left-summary">
+                There are a number of great Liberal Arts Schools in the USA
+                today, but what qualities do the best of them have?
+              </p>
+            </div>
+          </div>
+          <div class="sign-up">
+            <div class="line1 d-flex align-items-center">
+              <span class="icon-n"></span>
+              Sign up for our Newsletter
+            </div>
+            <a href="#">SIGN UP <i class="fas fa-chevron-right"></i></a>
+            <a href="#" class="pref">Update your preferences</a>
+          </div>
+          <div class="sponsored offset-md-3 offset-lg-0 col-md-6 col-lg-12">
+            <div class="sponsored-image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1579970/minnesota-state-university-mankato.jpg?w=500&h=333&l=0&t=0&f=be3deb29cdda5635e8d4655b0d0df489"
+                />
+              </a>
+              <div class="category position-relative">
+                <a href="#">SPONSORED INSIGHT</a>
+              </div>
+            </div>
+            <div class="sp-detail">
+              <a href="#" class="info">
+                <h3>What Qualities Make a Leading University?</h3>
+              </a>
+              <p class="left-summary">
+                A Leading University has to have a track record of producing
+                well qualified, gifted and employable candidates. Which schools
+                earn the accolade?
+              </p>
+            </div>
+          </div>
+          <div class="sponsored offset-md-3 offset-lg-0 col-md-6 col-lg-12">
+            <div class="sponsored-image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1573591/carleton-university-sprott-school-business.jpg?w=500&h=333&f=37789d7304cfa9370108298f0b23dac7"
+                />
+              </a>
+              <div class="category position-relative">
+                <a href="#">SPONSORED INSIGHT</a>
+              </div>
+            </div>
+            <div class="sp-detail">
+              <a href="#" class="info">
+                <h3>How Can a Good Business Education Benefit You?</h3>
+              </a>
+              <p class="left-summary">
+                Enrolling at a good Business School might be the best investment
+                you can make in your future, and while costs can be significant,
+                the rewards are incalculable. Find out more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center px-5 pt-5">
+          <div class="col">
+            <div class="magazine">
+              <div
+                class="mag-header px-5 d-flex justify-content-center align-items-center"
+              >
+                <span class="icon-n"></span>
+                IN THE MAGAZINE
+              </div>
+              <div class="row mag-section">
+                <div class="col-sm-12 col-md-3">
+                  <div class="mag-container position-relative">
+                    <img
+                      src="https://d.newsweek.com/en/full/1585087/may-08-15-2020-cover.jpg?w=360&h=480&q=90&f=8daec16f29a5ed3617c83e11ff6a5019"
+                      alt="class of 2020"
+                    />
+                    <a href="#" class="mag-tag-sep">MAY 15 ISSUE</a>
+                  </div>
+                  <a href="#" class="feature-sep"
+                    >SEE ALL FEATURES <i class="fas fa-chevron-right"></i>
+                  </a>
+                </div>
+                <div class="col-sm-12 col-md-3 mt-md-5">
+                  <div class="mag-container mag-all">
+                    <img
+                      src="https://d.newsweek.com/en/full/1584979/classof2020.jpg?w=466&h=311&l=50&t=50&q=90&f=d744de45e6705e6c455aeaa148669459"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mag-info pt-3">
+                    <span class="tag p-2">FEATURES</span>
+                    <a href="#" class="mag-category pt-2">EDUCATION</a>
+                  </div>
+                  <div class="mag-text">
+                    <a href="#" class=""
+                      >The Class of 2020 Is All Dressed Up With Nowhere to Go</a
+                    >
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 mt-md-5">
+                  <div class="mag-container mag-all">
+                    <img
+                      src="https://d.newsweek.com/en/full/1584979/classof2020.jpg?w=466&h=311&l=50&t=50&q=90&f=d744de45e6705e6c455aeaa148669459"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mag-info pt-3">
+                    <span class="tag p-2">FEATURES</span>
+                    <a href="#" class="mag-category pt-2">EDUCATION</a>
+                  </div>
+                  <div class="mag-text">
+                    <a href="#" class=""
+                      >The Class of 2020 Is All Dressed Up With Nowhere to Go</a
+                    >
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 mt-md-5">
+                  <div class="mag-container mag-all">
+                    <img
+                      src="https://d.newsweek.com/en/full/1584979/classof2020.jpg?w=466&h=311&l=50&t=50&q=90&f=d744de45e6705e6c455aeaa148669459"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mag-info pt-3">
+                    <span class="tag p-2">FEATURES</span>
+                    <a href="#" class="mag-category pt-2">EDUCATION</a>
+                  </div>
+                  <div class="mag-text">
+                    <a href="#" class=""
+                      >The Class of 2020 Is All Dressed Up With Nowhere to Go</a
+                    >
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 mt-md-5">
+                  <div class="mag-container mag-all">
+                    <img
+                      src="https://d.newsweek.com/en/full/1584979/classof2020.jpg?w=466&h=311&l=50&t=50&q=90&f=d744de45e6705e6c455aeaa148669459"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mag-info pt-3">
+                    <span class="tag p-2">FEATURES</span>
+                    <a href="#" class="mag-category pt-2">EDUCATION</a>
+                  </div>
+                  <div class="mag-text">
+                    <a href="#" class=""
+                      >The Class of 2020 Is All Dressed Up With Nowhere to Go</a
+                    >
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 mt-md-5">
+                  <div class="mag-container mag-all">
+                    <img
+                      src="https://d.newsweek.com/en/full/1584979/classof2020.jpg?w=466&h=311&l=50&t=50&q=90&f=d744de45e6705e6c455aeaa148669459"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mag-info pt-3">
+                    <span class="tag p-2">FEATURES</span>
+                    <a href="#" class="mag-category pt-2">EDUCATION</a>
+                  </div>
+                  <div class="mag-text">
+                    <a href="#" class=""
+                      >The Class of 2020 Is All Dressed Up With Nowhere to Go</a
+                    >
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 mt-md-5">
+                  <div class="mag-container mag-all">
+                    <img
+                      src="https://d.newsweek.com/en/full/1584979/classof2020.jpg?w=466&h=311&l=50&t=50&q=90&f=d744de45e6705e6c455aeaa148669459"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mag-info pt-3">
+                    <span class="tag p-2">FEATURES</span>
+                    <a href="#" class="mag-category pt-2">EDUCATION</a>
+                  </div>
+                  <div class="mag-text">
+                    <a href="#" class=""
+                      >The Class of 2020 Is All Dressed Up With Nowhere to Go</a
+                    >
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-3 mt-md-5">
+                  <div class="mag-container mag-all">
+                    <img
+                      src="https://d.newsweek.com/en/full/1584979/classof2020.jpg?w=466&h=311&l=50&t=50&q=90&f=d744de45e6705e6c455aeaa148669459"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mag-info pt-3">
+                    <span class="tag p-2">FEATURES</span>
+                    <a href="#" class="mag-category pt-2">EDUCATION</a>
+                  </div>
+                  <div class="mag-text">
+                    <a href="#" class=""
+                      >The Class of 2020 Is All Dressed Up With Nowhere to Go</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="editor">
+              <div
+                class="editor-header mt-5 d-flex justify-content-center align-items-center"
+              >
+                <span class="icon-n"></span>
+                EDITOR'S PICK
+              </div>
+              <div class="row editor-section">
+                <div class="col-md-6 col-lg-3">
+                  <div class="editor-section">
+                    <div class="editor-image">
+                      <a href="#">
+                        <img
+                          src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577"
+                        />
+                      </a>
+                      <div class="category position-relative">
+                        <a href="#">HEALTH</a>
+                      </div>
+                    </div>
+                    <a href="#" class="info">
+                      <h3>
+                        Without 100,000 Virus Contact Tracers, "We're Going to
+                        Be in Big Trouble"
+                      </h3>
+                    </a>
+                    <p class="left-summary">
+                      The point of contact tracing is to extinguish small
+                      pockets of new cases before they explode into big
+                      outbreaks like the ones that steamrolled New York City and
+                      New Orleans last month.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="editor-section">
+                    <div class="editor-image">
+                      <a href="#">
+                        <img
+                          src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577"
+                        />
+                      </a>
+                      <div class="category position-relative">
+                        <a href="#">HEALTH</a>
+                      </div>
+                    </div>
+                    <a href="#" class="info">
+                      <h3>
+                        Without 100,000 Virus Contact Tracers, "We're Going to
+                        Be in Big Trouble"
+                      </h3>
+                    </a>
+                    <p class="left-summary">
+                      The point of contact tracing is to extinguish small
+                      pockets of new cases before they explode into big
+                      outbreaks like the ones that steamrolled New York City and
+                      New Orleans last month.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="editor-section">
+                    <div class="editor-image">
+                      <a href="#">
+                        <img
+                          src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577"
+                        />
+                      </a>
+                      <div class="category position-relative">
+                        <a href="#">HEALTH</a>
+                      </div>
+                    </div>
+                    <a href="#" class="info">
+                      <h3>
+                        Without 100,000 Virus Contact Tracers, "We're Going to
+                        Be in Big Trouble"
+                      </h3>
+                    </a>
+                    <p class="left-summary">
+                      The point of contact tracing is to extinguish small
+                      pockets of new cases before they explode into big
+                      outbreaks like the ones that steamrolled New York City and
+                      New Orleans last month.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="editor-section">
+                    <div class="editor-image">
+                      <a href="#">
+                        <img
+                          src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577"
+                        />
+                      </a>
+                      <div class="category position-relative">
+                        <a href="#">HEALTH</a>
+                      </div>
+                    </div>
+                    <a href="#" class="info">
+                      <h3>
+                        Without 100,000 Virus Contact Tracers, "We're Going to
+                        Be in Big Trouble"
+                      </h3>
+                    </a>
+                    <p class="left-summary">
+                      The point of contact tracing is to extinguish small
+                      pockets of new cases before they explode into big
+                      outbreaks like the ones that steamrolled New York City and
+                      New Orleans last month.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="editor-section">
+                    <div class="editor-image">
+                      <a href="#">
+                        <img
+                          src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577"
+                        />
+                      </a>
+                      <div class="category position-relative">
+                        <a href="#">HEALTH</a>
+                      </div>
+                    </div>
+                    <a href="#" class="info">
+                      <h3>
+                        Without 100,000 Virus Contact Tracers, "We're Going to
+                        Be in Big Trouble"
+                      </h3>
+                    </a>
+                    <p class="left-summary">
+                      The point of contact tracing is to extinguish small
+                      pockets of new cases before they explode into big
+                      outbreaks like the ones that steamrolled New York City and
+                      New Orleans last month.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="editor-section">
+                    <div class="editor-image">
+                      <a href="#">
+                        <img
+                          src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577"
+                        />
+                      </a>
+                      <div class="category position-relative">
+                        <a href="#">HEALTH</a>
+                      </div>
+                    </div>
+                    <a href="#" class="info">
+                      <h3>
+                        Without 100,000 Virus Contact Tracers, "We're Going to
+                        Be in Big Trouble"
+                      </h3>
+                    </a>
+                    <p class="left-summary">
+                      The point of contact tracing is to extinguish small
+                      pockets of new cases before they explode into big
+                      outbreaks like the ones that steamrolled New York City and
+                      New Orleans last month.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="editor-section">
+                    <div class="editor-image">
+                      <a href="#">
+                        <img
+                          src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577"
+                        />
+                      </a>
+                      <div class="category position-relative">
+                        <a href="#">HEALTH</a>
+                      </div>
+                    </div>
+                    <a href="#" class="info">
+                      <h3>
+                        Without 100,000 Virus Contact Tracers, "We're Going to
+                        Be in Big Trouble"
+                      </h3>
+                    </a>
+                    <p class="left-summary">
+                      The point of contact tracing is to extinguish small
+                      pockets of new cases before they explode into big
+                      outbreaks like the ones that steamrolled New York City and
+                      New Orleans last month.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="editor-section">
+                    <div class="editor-image">
+                      <a href="#">
+                        <img
+                          src="https://d.newsweek.com/en/full/1587245/fe-privacy-qa-crystal-watson-03.jpg?w=397&h=265&l=60&t=54&q=90&f=fc139f936465bc2e651b92406612b577"
+                        />
+                      </a>
+                      <div class="category position-relative">
+                        <a href="#">HEALTH</a>
+                      </div>
+                    </div>
+                    <a href="#" class="info">
+                      <h3>
+                        Without 100,000 Virus Contact Tracers, "We're Going to
+                        Be in Big Trouble"
+                      </h3>
+                    </a>
+                    <p class="left-summary">
+                      The point of contact tracing is to extinguish small
+                      pockets of new cases before they explode into big
+                      outbreaks like the ones that steamrolled New York City and
+                      New Orleans last month.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="other-section">
+              <hr />
+              <p class="header pt-4">U.S.</p>
+              <div class="row content pt-4">
+                <div class="col-md-4">
+                  <img
+                    src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4"
+                    alt="Melinda Gates"
+                  />
+                  <p class="pt-3">
+                    <a href="#" class="about"
+                      >Melinda Gates Gives Trump Administration's Coronavirus
+                      Response 'D-'</a
+                    >
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4"
+                    alt="Melinda Gates"
+                  />
+                  <p class="pt-3">
+                    <a href="#" class="about"
+                      >Melinda Gates Gives Trump Administration's Coronavirus
+                      Response 'D-'</a
+                    >
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <div class="row third pb-3">
+                    <div class="col-md-6 col-lg-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-md-6 px-sm-0 px-5 col-lg-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row third py-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row py-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <p class="header pt-4">World</p>
+              <div class="row content pt-4">
+                <div class="col-md-4">
+                  <img
+                    src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4"
+                    alt="Melinda Gates"
+                  />
+                  <p class="pt-3">
+                    <a href="#" class="about"
+                      >Melinda Gates Gives Trump Administration's Coronavirus
+                      Response 'D-'</a
+                    >
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4"
+                    alt="Melinda Gates"
+                  />
+                  <p class="pt-3">
+                    <a href="#" class="about"
+                      >Melinda Gates Gives Trump Administration's Coronavirus
+                      Response 'D-'</a
+                    >
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <div class="row third pb-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row third py-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row py-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <p class="header pt-4">Business</p>
+              <div class="row content pt-4">
+                <div class="col-md-4">
+                  <img
+                    src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4"
+                    alt="Melinda Gates"
+                  />
+                  <p class="pt-3">
+                    <a href="#" class="about"
+                      >Melinda Gates Gives Trump Administration's Coronavirus
+                      Response 'D-'</a
+                    >
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4"
+                    alt="Melinda Gates"
+                  />
+                  <p class="pt-3">
+                    <a href="#" class="about"
+                      >Melinda Gates Gives Trump Administration's Coronavirus
+                      Response 'D-'</a
+                    >
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <div class="row third pb-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row third py-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row py-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <p class="header pt-4">Tech & Science</p>
+              <div class="row content pt-4">
+                <div class="col-md-4">
+                  <img
+                    src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4"
+                    alt="Melinda Gates"
+                  />
+                  <p class="pt-3">
+                    <a href="#" class="about"
+                      >Melinda Gates Gives Trump Administration's Coronavirus
+                      Response 'D-'</a
+                    >
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4"
+                    alt="Melinda Gates"
+                  />
+                  <p class="pt-3">
+                    <a href="#" class="about"
+                      >Melinda Gates Gives Trump Administration's Coronavirus
+                      Response 'D-'</a
+                    >
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <div class="row third pb-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row third py-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row py-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <p class="header pt-4">Culture</p>
+              <div class="row content pt-4">
+                <div class="col-md-4">
+                  <img
+                    src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4"
+                    alt="Melinda Gates"
+                  />
+                  <p class="pt-3">
+                    <a href="#" class="about"
+                      >Melinda Gates Gives Trump Administration's Coronavirus
+                      Response 'D-'</a
+                    >
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4"
+                    alt="Melinda Gates"
+                  />
+                  <p class="pt-3">
+                    <a href="#" class="about"
+                      >Melinda Gates Gives Trump Administration's Coronavirus
+                      Response 'D-'</a
+                    >
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <div class="row third pb-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row third py-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row py-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <p class="header pt-4">Sports</p>
+              <div class="row content pt-4">
+                <div class="col-md-4">
+                  <img
+                    src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4"
+                    alt="Melinda Gates"
+                  />
+                  <p class="pt-3">
+                    <a href="#" class="about"
+                      >Melinda Gates Gives Trump Administration's Coronavirus
+                      Response 'D-'</a
+                    >
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <img
+                    src="https://d.newsweek.com/en/full/1588307/melinda-gates.jpg?w=397&h=265&f=6b22b0443f038f1099fc6a9d20b6ffb4"
+                    alt="Melinda Gates"
+                  />
+                  <p class="pt-3">
+                    <a href="#" class="about"
+                      >Melinda Gates Gives Trump Administration's Coronavirus
+                      Response 'D-'</a
+                    >
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <div class="row third pb-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row third py-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row py-3">
+                    <div class="col-3">
+                      <a href="#">
+                        <img
+                          class="ninety5"
+                          src="https://d.newsweek.com/en/full/1588288/coronavirus-testing.jpg?w=397&h=265&f=8bb9216412406bc23fe187e67d2682fb"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="col-9">
+                      <p class="img-info">
+                        <a href="#"
+                          >Bureau of Prisons Says Virus Testing Limited as
+                          Inmates Test Positive in KY</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="pb-5" />
+            </div>
+            <div class="footer-top pb-5">
+              <div class="row">
+                <div class="col-lg-8">
+                  <h4 class="">SUBSCRIBE</h4>
+                  <div class="row ft-cont justify-content-between ml-0">
+                    <div class="col-lg-4 pl-0 pr-5 position-relative">
+                      <img
+                        src="https://d.newsweek.com/en/full/1582633/may-01-2020-cover.jpg?w=170&q=95&f=1a0d984a3141e5762557f214ca2a1540"
+                        alt=""
+                      />
+                      <img
+                        src="https://d.newsweek.com/en/full/1585087/may-08-15-2020-cover.jpg?w=170&q=95&f=c4d10af6474d34e586607b280b6589f0"
+                        alt=""
+                        class="position-absolute"
+                      />
+                    </div>
+                    <div class="col-8 pl-5 align-self-center">
+                      <h3>
+                        In-depth Stories You Don't See Elsewhere About Topics
+                        You Want to Read!
+                      </h3>
+                      <p>
+                        All Access + Weekly Delivery. Choose A Membership That's
+                        Perfect for You!
+                      </p>
+                      <button>
+                        SUBSCRIBE <i class="fas fa-chevron-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 pt-sm-3 pt-md-0 pl- lg-5">
+                  <h4 class="">NEWSLETTER</h4>
+                  <div class="row newsletter">
+                    <div class="col-6 pr-0">
+                      <div class="image-ft-top"></div>
+                    </div>
+                    <div class="col-6 p-0">
+                      <div class="newsletter-info">
+                        <h3>The Starting 5</h3>
+                        <p>
+                          See why nearly a quarter of a million subscribers
+                          begin their day with the Starting 5
+                        </p>
+                        <button>
+                          SIGN UP <i class="fas fa-chevron-right"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1287,42 +1869,136 @@
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <hr>
+      <hr />
+    </main>
 
-  <!-- FOOTER -->
-  <div class="container-fluid d-footer px-5 bg-white pt-5">
-    <div class="row pb-4">
-      <hr>
-      <div class="col-4">
-        <div class="left-top-footer d-flex align-items-baseline">
-          <a href="#">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve"><g>
-              <path class="st0" d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"></path>
-              </g></svg>
-          </a>
-          <p>&ThickSpace; &copy; 2020 NEWSWEEK</p>
+    <!-- FOOTER -->
+
+    <div class="container-fluid d-footer pb-5 px-5 bg-white pt-2">
+      <div class="row pb-1 pr-4 align-items-baseline">
+        <hr />
+        <div class="col-sm-12 col-md-6">
+          <div class="left-top-footer d-flex align-items-baseline">
+            <a class="" href="#">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 395.6 60"
+                style="enable-background: new 0 0 395.6 60;"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    class="st0"
+                    d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+            <p class="d-block">&ThickSpace; &copy; 2020 NEWSWEEK</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 px-1">
+          <div class="right-top-footer d-flex justify-content-md-end">
+            <a href="#" class="fb"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="tumblr"><i class="fab fa-tumblr"></i></a>
+            <a href="#" class="In"><i class="fab fa-linkedin-in"></i></a>
+          </div>
         </div>
       </div>
-      <div class="col-4 offset-md-4">
-        <div class="right-top-footer d-flex justify-content-end align-items-end">
-          <a href="#" class="fb"><i class="fab fa-facebook-square"></i></a>
-          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="tumblr"><i class="fab fa-tumblr"></i></a>
-          <a href="#" class="In"><i class="fab fa-linkedin-in"></i></a>
+      <hr class="pb-4 px-0" />
+      <div class="row pl-2">
+        <div class="col">
+          <div class="row pl-0 footer-first">
+            <ul class="nav">
+              <li class="nav-item editions">
+                <a href="#" class="font-weight-bold"> Editions:</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="">U.S. Edition</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="">日本</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="">Pakistan</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="">Polska</a>
+              </li>
+              <li class="nav-item romania">
+                <a href="#" class="">Romania</a>
+              </li>
+            </ul>
+          </div>
+          <div class="row footer-second">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="#" class="">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="">Corrections</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="">Editorial Guidelines</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="">Advertise</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="">Copyright</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="">Terms & Conditions</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="">Cookie Policy</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="">Terms of Sale</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="">Archive</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="">Announcements</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="consent">Consent preferences</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <hr  class="pb-4">
-    <div class="row"></div>
-  </div>
 
-
-  <!-- Bootstrap JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
