@@ -42,10 +42,6 @@ header {
   font-weight: 700;
 }
 
-/* .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 0;
-} */
-
 .h-date {
   font: 1.5rem 'Roboto Condensed', sans-serif;
 }
@@ -183,8 +179,6 @@ nav span.nav-item {
 }
 
 .fa-bars {
-  /* width: 3rem;
-  height: 1.8rem; */
   font-size: 2.4rem;
   color: #bbb;
 }
@@ -318,8 +312,6 @@ li.nav-item.last {
 .sponsored .info:hover,
 .about:hover {
   text-decoration-color: #f72210;
-
-  /* color: #f72210; */
 }
 
 .left-side p,
@@ -557,7 +549,6 @@ li.nav-item.last {
 }
 
 main.container-fluid {
-  /* border-bottom: 1px solid #d9d9d9; */
   padding-bottom: 2rem;
 }
 
@@ -567,8 +558,6 @@ main.container-fluid {
 
 .footer-first .nav li,
 .footer-second .nav li {
-  /* padding-right: .5rem;
-    margin-right: .5rem; */
   margin: 6px 0;
 }
 
