@@ -4,14 +4,30 @@
 
 ![screenshot](/screenshot.png)
 
+## Major Features
+
+- A subscribe and sign-in button
+- Navigation bar
+- Different sections with images and text
+- Footer
+- Responsive webpage
+
 ## Built With
 
 - HTML,
 - CSS
+- Font Awesome icons
+- Bootstrap framework
 
 ## Live Demo
 
 [Live Demo Link](https://raw.githack.com/ElijahTobs/Newsweek-clone/project/index.html)
+
+## Getting Started
+
+- Click on the [live demo link](https://raw.githack.com/ElijahTobs/Newsweek-clone/project/index.html) to checkout the webpage
+- You can also clone this [repo](https://github.com/ElijahTobs/Newsweek-clone)
+- After cloning, open with your preferred text editor and navigate to localhost:5500/index.html
 
 ## Authors
 
