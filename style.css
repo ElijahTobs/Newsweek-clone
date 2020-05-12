@@ -193,15 +193,18 @@ nav span.nav-item {
   padding-right: 7rem;
 }
 
-li.nav-item.last {
-  border-right: none;
-  color: #3581f4;
+.second-nav .last span {
+  color: #888;
 }
 
 .second-nav .nav-link {
   font-weight: 700;
-  border-right: 1px solid #888 !important;
+  border-right: 1px solid #888;
   padding: 0 1.5rem !important;
+}
+
+.second-nav .last .nav-link {
+  border-right: none;
 }
 
 .second-nav .navbar-nav {
