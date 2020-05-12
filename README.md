@@ -1,6 +1,6 @@
 # BOOTSTRAP PROJECT
 
->
+> One of @microverseinc mandatory projects that tests for the mastery of twitter bootstrap
 
 ![screenshot](.screenshot.png)
 
